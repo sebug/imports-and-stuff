@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1",
-      "copy-deps": "cp node_modules/knockout/build/output/knockout-latest.js libs/knockout.js"
+      "copy-deps": "mkdir -p libs && cp node_modules/knockout/build/output/knockout-latest.js libs/knockout.js"
   },
   "repository": {
     "type": "git",
