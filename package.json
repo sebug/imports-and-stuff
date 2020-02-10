@@ -4,7 +4,8 @@
   "description": "A demo of the natively supported import syntax",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "copy-deps": "cp node_modules/knockout/build/output/knockout-latest.js libs/knockout.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/sebug/imports-and-stuff/issues"
   },
-  "homepage": "https://github.com/sebug/imports-and-stuff#readme"
+  "homepage": "https://github.com/sebug/imports-and-stuff#readme",
+  "devDependencies": {
+    "knockout": "^3.5.1"
+  }
 }
