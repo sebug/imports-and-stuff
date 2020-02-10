@@ -19,8 +19,8 @@ class ShellViewModel {
     }
 
     removeNode(node) {
-	const idx = this.nodes.indexOf(node);
-	console.log(idx);
+	this.nodes.remove(node);
+
     }
 }
 
