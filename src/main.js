@@ -1,4 +1,5 @@
-import writeMessage from './writeMessage.js';
+import '../libs/knockout.js';
+import shellComponent from './shell.js';
 
-writeMessage();
+ko.applyBindings({});
 
