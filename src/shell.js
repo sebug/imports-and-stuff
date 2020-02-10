@@ -5,8 +5,15 @@ import Node from './models/node.js';
 class ShellViewModel {
     constructor() {
 	this.message = ko.observable("Hello from shell");
-	this.node = ko.observable(new Node());
-	this.node().name('from class instance of class');
+	this.nodes = ko.observableArray([]);
+	const firstNode = new Node();
+	firstNode.name('as first element');
+	this.nodes.push(firstNode);
+    }
+
+    addNode() {
+	const nodeToAdd = new Node();
+	this.nodes.push(nodeToAdd);
     }
 }
 
@@ -14,7 +21,10 @@ ko.components.register('shell', {
     viewModel: ShellViewModel,
     template: '<main>' +
 	'<h1><span data-bind="text: message"></span></h1>' +
-	'<edit-node params="node: node"></edit-node>' +
+	'<div data-bind="foreach: nodes">' +
+    '<edit-node params="node: $data"></edit-node>' +
+	'</div>' +
+	'<button data-bind="click: addNode">Add Node</button>' +
 	'</main>'
 });
 
