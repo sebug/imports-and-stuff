@@ -1,0 +1,19 @@
+{
+  "name": "imports-and-stuff",
+  "version": "1.0.0",
+  "description": "A demo of the natively supported import syntax",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebug/imports-and-stuff.git"
+  },
+  "author": "Sebastian Gfeller",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/sebug/imports-and-stuff/issues"
+  },
+  "homepage": "https://github.com/sebug/imports-and-stuff#readme"
+}
