@@ -1,6 +1,6 @@
 import '../libs/knockout.js';
 
-const editNodeComponent = ko.components.register('edit-node', {
+ko.components.register('edit-node', {
     viewModel: function(params) {
 	this.node = params.node;
 	if (typeof this.node !== 'function') {
@@ -16,4 +16,4 @@ const editNodeComponent = ko.components.register('edit-node', {
 	'</p>'
 });
 
-export default editNodeComponent;
+

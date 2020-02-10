@@ -1,7 +1,7 @@
 import '../libs/knockout.js';
 import './edit-node.js';
 
-const shellComponent = ko.components.register('shell', {
+ko.components.register('shell', {
     viewModel: function() {
 	this.message = ko.observable("Hello from shell");
 	this.node = {
@@ -15,4 +15,4 @@ const shellComponent = ko.components.register('shell', {
 	'</main>'
 });
 
-export default shellComponent;
+

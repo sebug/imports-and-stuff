@@ -1,5 +1,5 @@
 import '../libs/knockout.js';
-import shellComponent from './shell.js';
+import './shell.js';
 
 ko.applyBindings({});
 
