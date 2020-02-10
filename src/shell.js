@@ -9,11 +9,18 @@ class ShellViewModel {
 	const firstNode = new Node();
 	firstNode.name('as first element');
 	this.nodes.push(firstNode);
+
+	this.removeNode = this.removeNode.bind(this);
     }
 
     addNode() {
 	const nodeToAdd = new Node();
 	this.nodes.push(nodeToAdd);
+    }
+
+    removeNode(node) {
+	const idx = this.nodes.indexOf(node);
+	console.log(idx);
     }
 }
 
@@ -22,7 +29,7 @@ ko.components.register('shell', {
     template: '<main>' +
 	'<h1><span data-bind="text: message"></span></h1>' +
 	'<div data-bind="foreach: nodes">' +
-    '<edit-node params="node: $data"></edit-node>' +
+    '<edit-node params="node: $data"></edit-node> <button data-bind="click: $parent.removeNode">Remove</button>' +
 	'</div>' +
 	'<button data-bind="click: addNode">Add Node</button>' +
 	'</main>'
