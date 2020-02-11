@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "copy-deps": "mkdir -p libs && cp node_modules/knockout/build/output/knockout-latest.js libs/knockout.js",
-    "build": "mkdir -p build/src && babel src -d build/src && mkdir -p build/libs && babel libs -d build/libs && cp index_require.html build/index.html && cp node_modules/babel-polyfill/dist/polyfill.min.js build/libs/polyfill.min.js"
+    "build": "mkdir -p build/src && babel src -d build/src && mkdir -p build/libs && babel libs -d build/libs && cp index_require.html build/index.html && cp node_modules/babel-polyfill/dist/polyfill.min.js build/libs/polyfill.min.js && cp node_modules/requirejs/require.js build/libs/require.js"
   },
   "repository": {
     "type": "git",
