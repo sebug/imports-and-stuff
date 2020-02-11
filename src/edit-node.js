@@ -9,7 +9,7 @@ ko.components.register('edit-node', {
     },
     template: '<p data-bind="with: node"><label>' +
 	'Parent: <input data-bind="value: parentName" />' +
-	'<label>' +
+	'</label>' +
 	'<label>Element: ' +
 	'<input data-bind="value: name" />' +
 	'</label>' +
