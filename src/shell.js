@@ -1,4 +1,3 @@
-import '../libs/knockout.js';
 import './edit-node.js';
 import Node from './models/node.js';
 
