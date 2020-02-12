@@ -1,5 +1,3 @@
-import '../libs/knockout.js';
-
 ko.components.register('edit-node', {
     viewModel: function(params) {
 	this.node = params.node;
