@@ -11,3 +11,9 @@ Initially, run
 
 To add the external references.
 
+To build for older browsers, run
+
+	npm run build
+
+
+
